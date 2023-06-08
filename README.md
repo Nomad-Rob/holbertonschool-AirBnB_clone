@@ -1,6 +1,7 @@
-![HaBnB](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/fff9dd61-8a10-4f07-8d06-cefec834806c)
-
+<p align="center">
 # AirBnB Clone - The Console
+</p>
+![HaBnB](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/fff9dd61-8a10-4f07-8d06-cefec834806c)
 
 # Description of the project
 This is the start of a series of ABnB Projects that will be completed over the next few months. This project is the first step towards building a full web application: the AirBnB clone. This first step is very important because we will use what we build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration…
