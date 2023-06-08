@@ -1,7 +1,4 @@
-<p align="center">
 # AirBnB Clone - The Console
-</p>
-
 ![HaBnB](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/fff9dd61-8a10-4f07-8d06-cefec834806c)
 
 # Description of the project
