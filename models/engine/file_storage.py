@@ -32,7 +32,7 @@ class FileStorage:
         self.__objects[f'{obj.__class__.__name__}.{obj.id}'] = obj
 
     def save(self):
-        """will serialize objects to the obj with a key"""
+        """serializes __objects to the JSON file (path: __file_path)"""
         my_dict = {}
         for key, value in self.__objects.items():
             my_dict[key] = value.to_dict()
@@ -41,7 +41,7 @@ class FileStorage:
             return f.write(dumpy)
 
     def reload(self):
-        """will reload server data from the file"""
+        """reloads __objects from the JSON file (path: __file_path)"""
         try:
             with open(self.__file_path, 'r', encoding="UTF8") as f:
                 obj_dict = json.loads(f.read())
