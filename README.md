@@ -88,6 +88,7 @@ Amenity: Amenity class.
 Place: Place class.
 Review: Review class.
 
+![Quit ](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/b4aceab8-df8b-4d13-a60b-4b8109cfb081)
 !!!!!!!!!!!!!!!!!!SHow all attributes of each class and what they do!!!!!!!!!!!!!!!
 
 !!!!!! Good stopping point for now will need to update at end with pictures and added info. After AT will be able to flowchart this project but from reading and resourcing it seems like it will be a lot of work. !!!!!
