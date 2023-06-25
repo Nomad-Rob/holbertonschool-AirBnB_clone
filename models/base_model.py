@@ -1,14 +1,15 @@
 #!/usr/bin/python3
 """ Base model Module for AirBnB clone """
 
-import uuid
 from datetime import datetime
+import uuid
 import models
 
 
-class BaseModel:
-    """This is the base class for all the other classes"""
 
+class BaseModel:
+    """ Creates Base Model, define attributes for project """
+    
     def __init__(self, *args, **kwargs):
         """this initalizes the class ~(^-^)~"""
         if kwargs:
@@ -34,10 +35,11 @@ class BaseModel:
         self.updated_at = datetime.now()
         models.storage.save()
 
+
     def to_dict(self):
         """ returing a dictionary containing all keys/values of __dict__ """
         dict_cpy = self.__dict__.copy()
-        dict_cpy['__class__'] = self.__class__.__name__
         dict_cpy['created_at'] = self.created_at.isoformat()
         dict_cpy['updated_at'] = self.updated_at.isoformat()
+        dict_cpy['__class__'] = self.__class__.__name__
         return dict_cpy
