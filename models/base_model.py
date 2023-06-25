@@ -6,10 +6,9 @@ import uuid
 import models
 
 
-
 class BaseModel:
     """ Creates Base Model, define attributes for project """
-    
+
     def __init__(self, *args, **kwargs):
         """this initalizes the class ~(^-^)~"""
         if kwargs:
@@ -34,7 +33,6 @@ class BaseModel:
         """updates the public instance attribute with current datetime"""
         self.updated_at = datetime.now()
         models.storage.save()
-
 
     def to_dict(self):
         """ returing a dictionary containing all keys/values of __dict__ """

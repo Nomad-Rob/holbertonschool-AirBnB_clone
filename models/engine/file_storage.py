@@ -15,8 +15,8 @@ class FileStorage:
     """Serializes & deseralizes instances to a JSON file & vice versa."""
     __file_path = 'file.json'
     __objects = {}
-    
-    def __init__ (self):
+
+    def __init__(self):
         """constructor"""
         pass
 
