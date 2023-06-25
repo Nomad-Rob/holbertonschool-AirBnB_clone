@@ -2,6 +2,9 @@
 """ Module Command Controller """
 
 import cmd
+import sys
+import os
+import models
 from models.base_model import BaseModel
 from models.amenity import Amenity
 from models.city import City
