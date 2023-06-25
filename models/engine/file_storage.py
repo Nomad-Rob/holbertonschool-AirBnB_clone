@@ -15,6 +15,10 @@ class FileStorage:
     """Serializes & deseralizes instances to a JSON file & vice versa."""
     __file_path = 'file.json'
     __objects = {}
+    
+    def __init__ (self):
+        """constructor"""
+        pass
 
     @classmethod
     def destroy_all(cls):

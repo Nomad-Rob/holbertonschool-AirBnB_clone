@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-""" Module Command Controller """
+""" Module Command Controller entry point """
 
 import cmd
-import sys
-import os
-import models
 from models.base_model import BaseModel
 from models.amenity import Amenity
 from models.city import City
@@ -14,6 +11,8 @@ from models.state import State
 from models.user import User
 from models.engine.file_storage import FileStorage
 from models import storage
+
+
 user_class = {"BaseModel": BaseModel,
               "Amenity": Amenity,
               "City": City,
@@ -53,7 +52,11 @@ class HBNBCommand(cmd.Cmd):
 
     def do_show(self, args):
         """ prints str representation of an instance based on class
-        name and id """
+        name and id. it splits the argument into a list of strings then checks
+        if input is empty, if the first string is a valid class name,
+        then if the second string is a valid id, then if the
+        concatenated string is in the dictionary of objects, then
+        it prints the string representation of the object"""
         list_args = args.split(" ")
         if len(args) == 0:
             print("** class name missing **")
@@ -71,7 +74,13 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_destroy(self, args):
-        """ deletes an instance based on class name and id """
+        """ deletes an instance based on class name and id
+        first it splits the argument into a list of strings then checks
+        if input is empty, if the first string is a valid class name,
+        then if the second string is a valid id, then if the
+        concatenated string is in the dictionary of objects, then
+        it deletes the object from the dictionary and saves the
+        changes to the JSON file"""
         list_args = args.split(" ")
         if len(args) == 0:
             print("** class name missing **")
@@ -90,7 +99,11 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_all(self, args):
-        """ prints str representation of all instances of the object """
+        """ prints str representation of all instances of the object
+        it splits the argument into a list of strings then checks
+        if input is empty, if the first string is a valid class name,
+        then if the concatenated string is in the dictionary of objects,
+        then it prints the string representation of the object"""
         if len(args) == 0:
             for key in storage.all():
                 print([str(storage.all()[key])])
@@ -104,7 +117,13 @@ class HBNBCommand(cmd.Cmd):
 
     def do_update(self, args):
         """ updates an instance based on class name and id
-            by adding or updating an attribute """
+        by adding or updating an attribute
+        does this by splitting the argument into a list of strings
+        then checks if input is empty, if the first string is a valid
+        class name, then if the second string is a valid id, then if
+        the concatenated string is in the dictionary of objects,
+        then it updates the attribute of the object and saves the
+        changes to the JSON file """
         list_args = args.split(" ")
         if len(args) < 1:
             print('** class name missing **')
