@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-""" Base model Module for AirBnB clone """
+""" classs strcutre for BaseModel
+for all classes in the project"""
 
 from datetime import datetime
 import uuid
 import models
 
-
 class BaseModel:
-    """ Creates Base Model, define attributes for project """
+    """ Creates Base Model Class, which other classes will inherit from """
 
     def __init__(self, *args, **kwargs):
         """this initalizes the class ~(^-^)~"""
