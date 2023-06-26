@@ -67,15 +67,23 @@ The commands can be used in the following format: <command> <class name> <id> <a
 
 ### Examples of commands
 Create: create <class name>
+
 Show: show <class name> <id>
+
 Destroy: destroy <class name> <id>
+
 All: all <class name>
+
 Update: update <class name> <id> <attribute name> "<attribute value>"
+
 Help: help <command name>
+
 Quit: quit
+
 EOF: EOF
 
-!!!!!!!!!!!!!!!!!!!!SHOW Pictures and examples of commands above!!!!!!!!!
+
+![Quit ](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/b4aceab8-df8b-4d13-a60b-4b8109cfb081)
 
 ## Classes
 The console supports the following classes:
@@ -87,8 +95,6 @@ City: City class.
 Amenity: Amenity class.
 Place: Place class.
 Review: Review class.
-
-!!!!!!!!!!!!!!!!!!SHow all attributes of each class and what they do!!!!!!!!!!!!!!!
 
 !!!!!! Good stopping point for now will need to update at end with pictures and added info. After AT will be able to flowchart this project but from reading and resourcing it seems like it will be a lot of work. !!!!!
 
