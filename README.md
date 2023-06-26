@@ -74,6 +74,8 @@ Update: update <class name> <id> <attribute name> "<attribute value>"
 Help: help <command name>
 Quit: quit
 EOF: EOF
+
+
 ![Quit ](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/b4aceab8-df8b-4d13-a60b-4b8109cfb081)
 
 ## Classes
