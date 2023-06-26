@@ -67,12 +67,19 @@ The commands can be used in the following format: <command> <class name> <id> <a
 
 ### Examples of commands
 Create: create <class name>
+
 Show: show <class name> <id>
+
 Destroy: destroy <class name> <id>
+
 All: all <class name>
+
 Update: update <class name> <id> <attribute name> "<attribute value>"
+
 Help: help <command name>
+
 Quit: quit
+
 EOF: EOF
 
 
