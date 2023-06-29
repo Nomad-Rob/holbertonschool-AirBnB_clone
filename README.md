@@ -8,6 +8,14 @@ This is the start of a series of ABnB Projects that will be completed over the n
 ## The console (command interpreter)
 The console is a command line interpreter that permits management of the AirBnB objects. With the console you can create a new object, retrieve an object from a file, do operations on objects, update attributes of an object, and destroy an object.
 
+The objectives for the console are:
+
+Create a new object (ex: a new User or a new Place).
+Retrieve an object from a file, a database etc…
+Do operations on objects (count, compute stats, etc…).
+Update attributes of an object.
+Destroy an object.
+
 ## How to start the console
 The console can be started by running the console.py file in an interactive mode:
 
@@ -88,17 +96,39 @@ EOF: EOF
 ## Classes
 The console supports the following classes:
 
-BaseModel: BaseModel class for all other classes.
+BaseModel: BaseModel class for all other classes. 
 User: User class.
+
 State: State class.
+
 City: City class.
+
 Amenity: Amenity class.
+
 Place: Place class.
+
 Review: Review class.
 
-!!!!!! Good stopping point for now will need to update at end with pictures and added info. After AT will be able to flowchart this project but from reading and resourcing it seems like it will be a lot of work. !!!!!
+## Public Instance Attributes
+The following public instance attributes are supported by the console:
 
-!!!!! Still want to practice with pull request on github and code review. Maybe ask someone after AT to practice with !!!!!!
+id: string - assign with an uuid when an instance is created: uuid.uuid4(). The uuid is unique to every instance.
+
+created_at: datetime - assign with the current datetime when an instance is created.
+
+updated_at: datetime - assign with the current datetime when an instance is created and it will be updated every time you change your object.
+
+str: should print: [<class name>] (<self.id>) <self.__dict__>
+
+## Public Instance Methods
+The following public instance methods are supported by the console:
+
+save(self): updates the public instance attribute updated_at with the current datetime.
+
+to_dict(self): returns a dictionary containing all keys/values of __dict__ of the instance. This method will be the first piece of the serialization/deserialization process to JSON format.
+
+
+##Thanks for reading!
 
 ## Authors
 > Robert Farley: [Github](https://github.com/Nomad-Rob)
