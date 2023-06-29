@@ -122,7 +122,7 @@ The following public instance methods are supported by the console:
 **to_dict(self):** returns a dictionary containing all keys/values of __dict__ of the instance. This method will be the first piece of the serialization/deserialization process to JSON format.
 
 
-**##Thanks for reading!**
+**Thanks for reading!**
 
 ## Authors
 > Robert Farley: [Github](https://github.com/Nomad-Rob)
