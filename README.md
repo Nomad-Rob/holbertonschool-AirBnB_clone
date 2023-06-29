@@ -103,6 +103,7 @@ The console supports the following classes:
 
 **Review:** Review class.
 
+![the console classes](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/21efd469-c285-4cd3-b2bf-e02d67e16ea3)
 ## Public Instance Attributes
 The following public instance attributes are supported by the console:
 
