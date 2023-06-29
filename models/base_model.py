@@ -6,9 +6,9 @@ from datetime import datetime
 import uuid
 import models
 
+
 class BaseModel:
     """ Creates Base Model Class, which other classes will inherit from """
-
 
     def __init__(self, *args, **kwargs):
         """this initalizes the class ~(^-^)~"""
