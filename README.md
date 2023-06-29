@@ -10,11 +10,11 @@ The console is a command line interpreter that permits management of the AirBnB 
 
 The objectives for the console are:
 
-Create a new object (ex: a new User or a new Place).
-Retrieve an object from a file, a database etc…
-Do operations on objects (count, compute stats, etc…).
-Update attributes of an object.
-Destroy an object.
+- Create a new object (ex: a new User or a new Place).
+- Retrieve an object from a file, a database etc…
+- Do operations on objects (count, compute stats, etc…).
+- Update attributes of an object.
+- Destroy an object.
 
 ## How to start the console
 The console can be started by running the console.py file in an interactive mode:
@@ -74,21 +74,14 @@ Update: updates an instance based on the class name and id by adding or updating
 The commands can be used in the following format: <command> <class name> <id> <attribute name> "<attribute value>". The command name is always the first word, the class name is always the second word, the id is always the third word, the attribute name is always the fourth word, and the attribute value is always the fifth word. The attribute value must be enclosed in double quotes, and the attribute value must be a string, an integer, or a float. If the attribute value is a string that contains spaces, the entire string must be enclosed in double quotes. If the attribute value is a string that does not contain spaces, the double quotes are optional. If the attribute value is an integer or a float, the double quotes are optional.
 
 ### Examples of commands
-Create: create <class name>
-
-Show: show <class name> <id>
-
-Destroy: destroy <class name> <id>
-
-All: all <class name>
-
-Update: update <class name> <id> <attribute name> "<attribute value>"
-
-Help: help <command name>
-
-Quit: quit
-
-EOF: EOF
+- **Create:** create <class name>
+- **Show:** show <class name> <id>
+- **Destroy:** destroy <class name> <id>
+- **All:** all <class name>
+- **Update:** update <class name> <id> <attribute name> "<attribute value>"
+- **Help:** help <command name>
+- **Quit:** quit
+- **EOF:** EOF
 
 
 ![Quit ](https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone/assets/115587964/b4aceab8-df8b-4d13-a60b-4b8109cfb081)
@@ -96,39 +89,40 @@ EOF: EOF
 ## Classes
 The console supports the following classes:
 
-BaseModel: BaseModel class for all other classes. 
-User: User class.
+**BaseModel:** BaseModel class for all other classes. 
 
-State: State class.
+**User:** User class.
 
-City: City class.
+**State:** State class.
 
-Amenity: Amenity class.
+**City:** City class.
 
-Place: Place class.
+**Amenity:** Amenity class.
 
-Review: Review class.
+**Place:** Place class.
+
+**Review:** Review class.
 
 ## Public Instance Attributes
 The following public instance attributes are supported by the console:
 
-id: string - assign with an uuid when an instance is created: uuid.uuid4(). The uuid is unique to every instance.
+**id:** string - assign with an uuid when an instance is created: uuid.uuid4(). The uuid is unique to every instance.
 
-created_at: datetime - assign with the current datetime when an instance is created.
+**created_at:** datetime - assign with the current datetime when an instance is created.
 
-updated_at: datetime - assign with the current datetime when an instance is created and it will be updated every time you change your object.
+**updated_at:** datetime - assign with the current datetime when an instance is created and it will be updated every time you change your object.
 
-str: should print: [<class name>] (<self.id>) <self.__dict__>
+**str:** should print: [<class name>] (<self.id>) <self.__dict__>
 
 ## Public Instance Methods
 The following public instance methods are supported by the console:
 
-save(self): updates the public instance attribute updated_at with the current datetime.
+**save(self):** updates the public instance attribute updated_at with the current datetime.
 
-to_dict(self): returns a dictionary containing all keys/values of __dict__ of the instance. This method will be the first piece of the serialization/deserialization process to JSON format.
+**to_dict(self):** returns a dictionary containing all keys/values of __dict__ of the instance. This method will be the first piece of the serialization/deserialization process to JSON format.
 
 
-##Thanks for reading!
+**##Thanks for reading!**
 
 ## Authors
 > Robert Farley: [Github](https://github.com/Nomad-Rob)
